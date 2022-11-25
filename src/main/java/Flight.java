@@ -6,17 +6,17 @@ public class Flight {
     private final String name;
     private Double price;
     private final List<City> destinationsAvailable;
-    private ArrayList<Flight> seat;
+    private static ArrayList<String> seats;
 
-    public Flight (String name, Double price, String seat){
+    public Flight (String name, Double price, String seats){
         this.name = name;
         this.price = price;
         this.destinationsAvailable = new ArrayList<>();
-        this.seat = new ArrayList<>();
+        seats = String.valueOf(new ArrayList<Flight>());
     }
 
     public static void main(String[] args) {
-        ArrayList<String> seats = new ArrayList<String>();
+        Flight.seats = new ArrayList<>();
         seats.add("1A");
         seats.add("1B");
         seats.add("1C");
@@ -25,6 +25,8 @@ public class Flight {
         seats.add("2C");
 
     }
+
+
     public String getSeat(ArrayList<Flight> seats) {
         int index = seats.size();
         return seats.toString();}

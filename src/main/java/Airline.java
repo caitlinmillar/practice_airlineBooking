@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Airline {
     private String name;
     private int airlineMoney;
-    private ArrayList<Flight> flightBooking;
+    private static ArrayList<Flight> flightBooking;
     private double price;
 
     public Airline(String name){

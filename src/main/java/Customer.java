@@ -8,7 +8,7 @@ public class Customer {
     public Customer(String name, double wallet){
         this.name = name;
         this.wallet = wallet;
-        this.flight = new ArrayList<Airline>();
+        this.flight = new ArrayList<>();
     }
 
     public boolean canBuy(Airline flight){
